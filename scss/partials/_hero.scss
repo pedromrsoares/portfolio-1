@@ -1,0 +1,65 @@
+#hero {
+  background: url(../img/hero-1.jpg);
+  background-size: cover;
+  height: 100vh;
+  overflow: hidden;
+
+  .navbar-brand img {
+    height: 15vh;
+  }
+
+  .navbar-nav {
+    margin: auto;
+    text-align: center;
+
+    a {
+      font-family: $ff-ss;
+      text-decoration: none;
+      text-transform: uppercase;
+      color: $black;
+      opacity: .8;
+      margin-left: 2em;
+      font-weight: $fw-m;
+      transition: ease-in-out 150ms;
+
+      &:hover {
+        font-size: 1.2em;
+        color: $light-green;
+      }
+    }
+  }
+
+  .hero-text {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+    h1 {
+      font-family: $ff-s;
+      font-size: 12vw;
+      font-weight: $fw-b;
+      opacity: .8;
+      margin: 0;
+      &:hover {
+        opacity: 1;
+      }
+      @include media-breakpoint-up(md) {
+        font-size: 8vw;
+      };
+    }
+
+    h6 {
+      font-family: $ff-ss;
+      font-weight: $fw-r;
+      font-size: 8vw;
+      opacity: .7;
+      margin: 0;
+      @include media-breakpoint-up(md) {
+        font-size: 5vw;
+      };
+    }
+  }
+}

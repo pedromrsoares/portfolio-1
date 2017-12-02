@@ -1,0 +1,18 @@
+#contact {
+
+  h1 {
+    text-align: center;
+  }
+
+  button {
+    color: white;
+    font-size: 1.5em;
+    font-family: $ff-s;
+    text-transform: uppercase;
+    background: $dark-green;
+    padding: .3em;
+    border-radius: .2em;
+  }
+
+  margin-bottom: 4em;
+}

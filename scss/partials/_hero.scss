@@ -1,4 +1,4 @@
-#hero {
+#home {
   background: url(../img/hero-1.jpg);
   background-size: cover;
   height: 100vh;
@@ -11,6 +11,9 @@
   .navbar-nav {
     margin: auto;
     text-align: center;
+    @include media-breakpoint-up(lg) {
+      padding-right: 15em;
+    };
 
     a {
       font-family: $ff-ss;

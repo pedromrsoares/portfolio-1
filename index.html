@@ -8,11 +8,12 @@
 
    <!-- Bootstrap CSS -->
    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+   <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
 
-  <section id="hero">
+  <section id="home">
       <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#"><img src="img/logo.png" alt="logo"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +22,7 @@
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
             <li class="nav-item active">
-              <a class="nav-link" href="#hero">Home <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">About</a>
@@ -30,7 +31,7 @@
               <a class="nav-link" href="#portfolio">Portfolio</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
+              <a class="nav-link" href="#contact">Contact</a>
             </li>
           </ul>
       </nav>
@@ -132,9 +133,52 @@
 
   <section id="contact">
     <div class="container">
-      
+
+      <h1 class="title">Contact me</h1>
+
+      <div class="col-md-10 offset-md-1 col-lg-8 offset-lg-2">
+        <form action="https://formspree.io/pedrorod.soa@gmail.com"
+        method="POST">
+
+            <div class="form-group">
+              <label for="exampleFormControlInput0">Name</label>
+              <input type="text" name="name" class="form-control" id="exampleFormControlInput0">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlInput1">Email address</label>
+              <input type="email" name="_replyto" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+            </div>
+            <div class="form-group">
+              <label for="exampleFormControlTextarea1">Write me a message:</label>
+              <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-block col-lg-6">Send</button>
+
+        </form>
+      </div>
     </div>
   </section>
+
+  <footer>
+    <div class="row d-flex">
+      <div class="col-xs-12 col-md-5">
+        <ul class="social-links">
+          <li class="social-link"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+          <li class="social-link"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+          <li class="social-link"><a href="#"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li class="social-link"><a href="#"><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="col-xs-12 col-md-2">
+        <img class="img-fluid" src="img/logo.png" alt="logo">
+      </div>
+
+      <div class="copyright col-xs-12 col-md-5">
+        <h5>All Rights Reserved &copy; Pedro Soares 2017</h5>
+      </div>
+    </div>
+  </footer>
 
 
   <!-- Optional JavaScript -->
